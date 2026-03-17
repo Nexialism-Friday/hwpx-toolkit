@@ -1,0 +1,35 @@
+hwpx-toolkit
+Copyright 2026 Tommy Keum
+
+This product is licensed under the Apache License, Version 2.0.
+
+---
+
+HWPX Format Specification
+This software implements document parsing and generation based on the
+publicly available HWPX (HWP Open XML) specification published by Hancom Inc.
+
+Reference: https://www.hancom.com/support/downloadCenter/hwpOwpml
+Standard: KS X 6101 (Korean Industrial Standard for HWP Open XML)
+
+The HWPX format specification is published by Hancom Inc. and is available
+for implementation without restriction. This software does not use, copy,
+or derive from any Hancom proprietary source code.
+
+---
+
+Third-party dependencies (not bundled, installed separately):
+
+- pyhwp (hwp5): https://github.com/mete0r/pyhwp
+  License: GNU Affero General Public License v3.0
+  Used for: Legacy .hwp (binary format) parsing via CLI subprocess
+  Note: pyhwp is invoked as an external process, not imported as a library,
+        to maintain Apache-2.0 compatibility of this project.
+
+- Model Context Protocol (MCP) SDK
+  License: MIT
+  Used for: MCP server implementation
+
+- Qdrant Client
+  License: Apache-2.0
+  Used for: Vector database integration

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+*.hwp
+*.hwpx
+!examples/*.hwpx
+*.log
+.DS_Store
